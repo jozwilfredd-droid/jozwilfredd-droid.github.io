@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Richrichiee | Beats & Sample Packs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy industry-quality beats and sample packs from Richrichiee. Trap, drill, hip-hop, and more.">
+    <style>
+        :root {
+            --bg-color: #050510;
+            --bg-alt: #0b0b1a;
+            --primary: #ffb100;
+            --accent: #4caf50;
+            --text-main: #ffffff;
+            --text-muted: #a9a9c5;
+            --card-bg: #121225;
+            --border-subtle: #262646;
+            --danger: #e53935;
+            --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.6);
+            --radius-lg: 18px;
+            --radius-md: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top left, #221133, #050510);
+            color: var(--text-main);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Layout */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(18px);
+            background: linear-gradient(to right, rgba(5,5,16,0.92), rgba(5,5,16,0.8));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .nav-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-size: 0.92rem;
+        }
+
+        .logo-mark {
+            width: 30px;
+            height: 30px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 0, #ffe082, #ffb100);
+            position: relative;
+            box-shadow: 0 0 22px rgba(255, 177, 0, 0.85);
+        }
+
+        .logo-mark::after {
+            content: "";
+            position: absolute;
+            inset: 5px;
+            border-radius: inherit;
+            border: 2px solid rgba(0,0,0,0.4);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 18px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        nav a {
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: background 0.16s ease, color 0.16s ease, transform 0.12s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-main);
+            transform: translateY(-1px);
+        }
+
+        .nav-cta {
+            padding: 7px 16px;
+            border-radius: 999px;
+            background: var(--primary);
+            color: #1a1304;
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: 0 0 18px rgba(255,177,0,0.6);
+        }
+
+        .nav-cta:hover {
+            background: #ffd54f;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 30px 18px 60px;
+        }
+
+        /* Hero */
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 3.2fr) minmax(0, 2.3fr);
+            gap: 32px;
+            align-items: center;
+            margin-top: 24px;
+            margin-bottom: 50px;
+        }
+
+        .hero-left {
+            padding-right: 10px;
+        }
+
+        .eyebrow {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .eyebrow-pill {
+            padding: 3px 9px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            font-size: 0.7rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 4vw, 3.1rem);
+            line-height: 1.08;
+            margin: 14px 0 10px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(120deg, #ffecb3, #ffb100, #ff7043);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero-sub {
+            color: var(--text-muted);
+            font-size: 0.96rem;
+            max-width: 520px;
+            line-height: 1.6;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0 24px;
+        }
+
+        .hero-badge {
+            font-size: 0.72rem;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-muted);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .btn-primary {
+            padding: 11px 20px;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #ffb100, #ff7043);
+            color: #1a1304;
+            box-shadow: 0 14px 30px rgba(255, 112, 67, 0.6);
+        }
+
+        .btn-outline {
+            padding: 10px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.22);
+            background: transparent;
+            color: var(--text-main);
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-note {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+        }
+
+        .hero-right {
+            position: relative;
+        }
+
+        .player-card {
+            background: radial-gradient(circle at top, #20133a, #050510);
+            border-radius: 26px;
+            padding: 18px 18px 20px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .player-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .cover-art {
+            width: 58px;
+            height: 58px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #ffb100, #ff7043, #8e24aa);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-art::before,
+        .cover-art::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.18);
+        }
+
+        .cover-art::before {
+            width: 80px;
+            height: 80px;
+            top: -18px;
+            right: -18px;
+        }
+
+        .cover-art::after {
+            width: 54px;
+            height: 54px;
+            bottom: -10px;
+            left: -10px;
+        }
+
+        .track-meta h3 {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        .track-meta span {
+            display: block;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+        }
+
+        .tag-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 6px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(0,0,0,0.4);
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .waveform {
+            margin: 10px 0 14px;
+            height: 46px;
+            border-radius: 14px;
+            padding: 6px 8px;
+            background: rgba(0,0,0,0.24);
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .bar {
+            width: 3px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.14);
+        }
+
+        .bar:nth-child(odd) {
+            height: 60%;
+        }
+
+        .bar:nth-child(even) {
+            height: 30%;
+        }
+
+        .bar:nth-child(4n) {
+            height: 80%;
+        }
+
+        .player-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .player-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .play-btn {
+            width: 34px;
+            height: 34px;
+            border-radius: 999px;
+            border: none;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1304;
+            box-shadow: 0 0 18px rgba(255, 177, 0, 0.7);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .next-btn {
+            width: 26px;
+            height: 26px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.18);
+            background: transparent;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .price-pill {
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.12);
+            font-size: 0.75rem;
+        }
+
+        .price-pill strong {
+            color: var(--primary);
+        }
+
+        .floating-pill {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.18);
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .hero-glow {
+            position: absolute;
+            inset: -60px;
+            background: radial-gradient(circle at 80% 0, rgba(255,177,0,0.16), transparent 55%);
+            opacity: 0.65;
+            pointer-events: none;
+        }
+
+        /* Sections */
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+
+        .section-header p {
+            margin: 0;
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #121225, #050510);
+            border-radius: var(--radius-lg);
+            padding: 14px 14px 16px;
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.55);
+        }
+
+        .card-header {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .thumb {
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            background: radial-gradient(circle at 30% 0, #ffe082, #ff7043);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 0.96rem;
+        }
+
+        .card span {
+            display: block;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 8px 0 10px;
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.04);
+            color: var(--text-muted);
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.8rem;
+        }
+
+        .price {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .bpm-key {
+            color: var(--text-muted);
+        }
+
+        .btn-buy {
+            padding: 7px 13px;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: var(--accent);
+            color: #041107;
+        }
+
+        .btn-buy.lease {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.22);
+            color: var(--text-main);
+        }
+
+        /* About & Contact */
+
+        .about-contact {
+            display: grid;
+            grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
+            gap: 20px;
+        }
+
+        .about-card,
+        .contact-card {
+            background: linear-gradient(145deg, #121225, #050510);
+            border-radius: var(--radius-lg);
+            padding: 16px 16px 18px;
+            border: 1px solid rgba(255,255,255,0.07);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.55);
+        }
+
+        .about-card p,
+        .contact-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .highlight-pill {
+            font-size: 0.78rem;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.04);
+            color: var(--text-muted);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .contact-form label {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 9px 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.16);
+            background: rgba(0,0,0,0.35);
+            color: var(--text-main);
+            font: inherit;
+            font-size: 0.86rem;
+        }
+
+        .contact-form textarea {
+            min-height: 70px;
+            resize: vertical;
+        }
+
+        .contact-note {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 18px;
+            text-align: center;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            background: #050510;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .footer-links a {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+
+        @media (max-width: 880px) {
+            .hero {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            .hero-right {
+                order: -1;
+            }
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .about-contact {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            nav ul {
+                display: none;
+            }
+        }
+
+        @media (max-width: 620px) {
+            main {
+                padding: 24px 14px 40px;
+            }
+            .grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            .hero {
+                margin-top: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo">
+            <div class="logo-mark"></div>
+            <span>Richrichiee</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beats">Beats</a></li>
+                <li><a href="#packs">Sample Packs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Custom Order</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="eyebrow">
+                <span class="eyebrow-pill">New</span>
+                <span>Exclusive beats & sample packs</span>
+            </div>
+            <h1>
+                <span class="gradient-text">Richrichiee</span>  
+                <br>Industry‑ready beats for your next record.
+            </h1>
+            <p class="hero-sub">
+                High‑quality drums, clean 808s, and melodic samples crafted for artists, producers, and content creators. 
+                Instant delivery, clear licensing, and plug‑and‑play files that drop straight into your DAW.
+            </p>
+            <div class="hero-badges">
+                <span class="hero-badge">WAV & MP3 included</span>
+                <span class="hero-badge">Instant download after purchase</span>
+                <span class="hero-badge">Non‑exclusive & exclusive options</span>
+            </div>
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="document.getElementById('beats').scrollIntoView({behavior:'smooth'})">
+                    Browse beats
+                    <span>▶</span>
+                </button>
+                <button class="btn-outline" onclick="document.getElementById('packs').scrollIntoView({behavior:'smooth'})">
+                    View sample packs
+                </button>
+            </div>
+            <p class="hero-note">
+                Need a custom beat or pack tailored to your sound? Use the form below to reach out with details.
+            </p>
+        </div>
+
+        <div class="hero-right">
+            <div class="player-card">
+                <div class="hero-glow"></div>
+                <div class="floating-pill">Preview player (demo only)</div>
+                <div class="player-top">
+                    <div class="cover-art"></div>
+                    <div class="track-meta">
+                        <h3>Midnight Skyline</h3>
+                        <span>Type beat • Trap / Hip‑hop</span>
+                        <div class="tag-chip">
+                            <span>🔥 Best seller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="waveform">
+                    <!-- Fake mini bars just for looks -->
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                </div>
+                <div class="player-controls">
+                    <div class="player-buttons">
+                        <button class="play-btn">▶</button>
+                        <button class="next-btn">⏭</button>
+                    </div>
+                    <div class="price-pill">
+                        <span>From <strong>$29.99</strong> / lease</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beats Section -->
+    <section id="beats">
+        <div class="section-header">
+            <div>
+                <h2>Beats for sale</h2>
+                <p>Choose a beat, click “Buy” and you’ll be taken to a secure checkout with instant download.</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Beat 1 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>Night Drive</h3>
+                        <span>Dark trap / drill type beat</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">WAV + MP3</span>
+                    <span class="tag">Tracked out stems</span>
+                    <span class="tag">Non‑exclusive lease</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">Lease $29.99</div>
+                        <div class="bpm-key">140 BPM • F minor</div>
+                    </div>
+                    <div>
+                        <!-- TODO: Replace # with your BeatStars / Payhip / Sellfy link -->
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy beat</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Beat 2 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>City Lights</h3>
+                        <span>Melodic hip‑hop / R&B</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">Hook friendly</span>
+                    <span class="tag">Radio ready mix</span>
+                    <span class="tag">WAV + MP3</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">Lease $34.99</div>
+                        <div class="bpm-key">92 BPM • B minor</div>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy beat</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Beat 3 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>Golden Hour</h3>
+                        <span>Lofi / chillhop vibe</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">Perfect for YouTube</span>
+                    <span class="tag">No Content ID issues</span>
+                    <span class="tag">Loop ready</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">Lease $24.99</div>
+                        <div class="bpm-key">80 BPM • C major</div>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy beat</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p style="margin-top:10px; font-size:0.8rem; color:#a9a9c5;">
+            Want exclusive rights? Mention the beat name and your offer in the contact form below.
+        </p>
+    </section>
+
+    <!-- Sample Packs Section -->
+    <section id="packs">
+        <div class="section-header">
+            <div>
+                <h2>Sample packs</h2>
+                <p>Drums, melodies, and one‑shots to level up your own productions.</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Pack 1 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>Rich Drums Vol. 1</h3>
+                        <span>Trap / drill drum kit</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">Kicks, 808s, snares, hats</span>
+                    <span class="tag">24‑bit WAV</span>
+                    <span class="tag">Royalty‑free</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">$19.99</div>
+                        <div class="bpm-key">120+ unique sounds</div>
+                    </div>
+                    <div>
+                        <!-- Replace # with your actual pack link -->
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy pack</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pack 2 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>Midnight Melodies</h3>
+                        <span>Dark, cinematic loops</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">Key & BPM labeled</span>
+                    <span class="tag">Drag & drop into DAW</span>
+                    <span class="tag">Royalty‑free for beats</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">$24.99</div>
+                        <div class="bpm-key">40+ melody loops</div>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy pack</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pack 3 -->
+            <article class="card">
+                <div class="card-header">
+                    <div class="thumb"></div>
+                    <div>
+                        <h3>Essentials Bundle</h3>
+                        <span>Drums + Melodies bundle</span>
+                    </div>
+                </div>
+                <div class="tag-row">
+                    <span class="tag">Best value</span>
+                    <span class="tag">Includes Vol. 1 drums</span>
+                    <span class="tag">Includes Midnight Melodies</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">$34.99</div>
+                        <div class="bpm-key">Save vs buying separate</div>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <button class="btn-buy">Buy bundle</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About & Contact -->
+    <section id="about">
+        <div class="about-contact">
+            <div class="about-card">
+                <h2>About Richrichiee</h2>
+                <p>
+                    Richrichiee is a producer focused on hard‑hitting drums, clean low end, and memorable melodies that 
+                    translate from headphones to the club. Whether you’re an artist looking for your next single or a 
+                    creator needing background music for content, there’s a sound here for you.
+                </p>
+                <p>
+                    All beats and sample packs are designed to drop straight into your workflow, with clear labeling, 
+                    organized folders, and ready‑to‑use files. No fluff—just the tools you need to finish more music.
+                </p>
+                <div class="about-highlights">
+                    <span class="highlight-pill">Trap / Drill / Hip‑hop</span>
+                    <span class="highlight-pill">YouTube & streaming ready</span>
+                    <span class="highlight-pill">Royalty‑free sample packs</span>
+                </div>
+            </div>
+
+            <div class="contact-card" id="contact">
+                <h2>Custom beats & questions</h2>
+                <p>
+                    For custom beats, exclusive rights, bulk pack deals, or any questions, use the form below. 
+                    Include as many details as possible (mood, BPM range, references).
+                </p>
+                <!-- This is a non‑functional form on its own. 
+                     To make it work, connect it to your email service or form handler. -->
+                <form class="contact-form">
+                    <div>
+                        <label for="name">Name / Artist name</label>
+                        <input type="text" id="name" placeholder="Your name or artist name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="message">Project details</label>
+                        <textarea id="message" placeholder="Tell me what you need: custom beat, exclusive rights, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send request</button>
+                    <p class="contact-note">
+                        Tip: you can also link this button to your email (e.g., mailto:your@email)
+                        or connect it to a service like Formspree, Tally, or Notion Forms.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div>© <span id="year"></span> Richrichiee. All rights reserved.</div>
+    <div class="footer-links">
+        <!-- Replace # with your socials -->
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">YouTube</a>
+        <a href="#" target="_blank">Beat store</a>
+    </div>
+</footer>
+
+<script>
+    // Set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
